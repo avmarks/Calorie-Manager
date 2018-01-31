@@ -1,4 +1,4 @@
-#Emoji-Rated News Project
+# Emoji-Rated News Project
 
 ### Problem Statement
 It has come to pass that even though there is joy attached to the process of reading the news,
