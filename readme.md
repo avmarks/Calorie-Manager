@@ -17,7 +17,7 @@ retrieving calculated  data, which would save time and make it a perfect app for
   * MySQL
   * Store foods, recipes and calories
 * ORM Framework
-  * Hibernate 5
+  * Hibernate ??
 * Dependency Management
   * Maven
 * CSS 
