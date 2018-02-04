@@ -7,14 +7,14 @@ have my own database with foods and recipes. This application would assist in st
 retrieving calculated  data, which would make it a perfect app for the tablet in the kitchen.
  
  
- ![Calorie Manager Initial Design] (DesignDocuments/1.PNG)
+ ![Calorie Manager Initial Design](DesignDocuments/1.PNG)
  
- ![] (DesignDocuments/2.PNG)
+ ![Calorie Manager Initial Design](DesignDocuments/2.PNG)
  
- ![] (DesignDocuments/3.PNG)
+ ![Calorie Manager Initial Design](DesignDocuments/3.PNG)
  
- ![] (DesignDocuments/4.PNG)
+ ![Calorie Manager Initial Design](DesignDocuments/4.PNG)
  
- ![] (DesignDocuments/5.PNG)
+ ![Calorie Manager Initial Design](DesignDocuments/5.PNG)
 
 
