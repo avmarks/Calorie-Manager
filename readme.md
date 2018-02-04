@@ -8,9 +8,13 @@ retrieving calculated  data, which would make it a perfect app for the tablet in
  
  
  ![Calorie Manager Initial Design] (DeignDocuments/1.png)
+ 
  ![] (DesignDocuments/2.png)
+ 
  ![] (DesignDocuments/3.png)
+ 
  ![] (DesignDocuments/4.png)
+ 
  ![] (DesignDocuments/5.png)
 
 
