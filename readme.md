@@ -4,7 +4,7 @@
 Tracking calories could be a complicated task, especially if the food is cooked at home.
 After a few years of experience with tracking calories, I realize that it would be beneficial to 
 have my own database with foods and recipes. This application would assist in storing and
-retrieving calculated  data, which would make it a perfect app for the tablet in the kitchen.
+retrieving calculated  data, which would save time and make it a perfect app for the tablet in the kitchen.
  
 ### Project Technologies/Techniques 
 
