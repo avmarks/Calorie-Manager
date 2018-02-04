@@ -1,11 +1,15 @@
-***Emoji-Rated News Project***
+***Calorie Manager Project***
 
 ### Problem Statement
-It has come to pass that even though there is joy attached to the process of reading the news,
- there also could be great sorrow accompanying such an activity. 
- Therefore, my soul inclines me to write a web application that would release me from such sorrows. 
- Additionally, such service would allow ease of access to the news that are sorted/rated by emojis.
- The hope is by seeing a certain emoji next to a news article one would have a base understanding of the article tone,
- content, etc. and therefore could make a judgement on whether to read it or not.
+Tracking calories could be a complicated task, especially if the food is cooked at home.
+After a few years of experience with tracking calories, I realize that it would be beneficial to 
+have my own database with foods and recipes. This application would assist in storing and
+retrieving calculated  data, which would make it a perfect app for the tablet in the kitchen.
+ 
+ ![Calorie Manager Initial Design] (DeignDocuments/1.png)
+ ![] (DeignDocuments/2.png)
+ ![] (DeignDocuments/3.png)
+ ![] (DeignDocuments/4.png)
+ ![] (DeignDocuments/5.png)
 
 
