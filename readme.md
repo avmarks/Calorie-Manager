@@ -41,3 +41,4 @@ which would save time and energy, in addition to making it a perfect app for a k
 ### [Project Plan](ProjectPlan.md)
 
 ### [Development Time Log](TimeLog.md)
+### [Database design](DesignDocuments/Database.md)
