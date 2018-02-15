@@ -18,7 +18,6 @@
 - [ ] Create user dao
 - [ ] Create the test database
 - [ ] Create user dao unit tests
-- [ ] Weekly journal entry
 - [ ] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
@@ -39,8 +38,8 @@
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
 - [ ] Create item table
-- [ ] Add the item entity??? (test, dev and prod dbs)
-- [ ] Realize that these daos?? are repetitive. Refactor into a generic dao!
+- [ ] Add the item entity (test, dev and prod dbs)
+- [ ] Realize that these daos are repetitive. Refactor into a generic dao!
 - [ ] Add update and delete functionality in jsp for user and role
 - [ ] Build the item search jsp
 - [ ] Build the item add/update/delete jsp

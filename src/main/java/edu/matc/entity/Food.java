@@ -20,5 +20,4 @@ public class Food {
     @Column(name = "food_calories")
     public String foodCalories;
 
-
 }
