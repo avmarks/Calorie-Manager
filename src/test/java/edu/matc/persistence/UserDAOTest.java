@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +25,9 @@ class UserDAOTest {
     void setUp() {
 
         dao = new UserDAO();
+
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");
     }
 
     /**
@@ -32,7 +36,7 @@ class UserDAOTest {
     @Test
     void getAllUsersSuccess() {
         List<User> users = dao.getAllUsers();
-        assertEquals(1, users.size());
+        assertEquals(3, users.size());
     }
 
     /**
@@ -40,8 +44,8 @@ class UserDAOTest {
      */
     @Test
     void getUsersByLastNameSuccess() {
-        List<User> users = dao.getUsersByLastName("A");
-        assertEquals(1, users.size());
+        List<User> users = dao.getUsersByLastName("MARKS");
+        assertEquals(3, users.size());
     }
 
     /**
@@ -101,8 +105,8 @@ class UserDAOTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        dao.delete(dao.getById(1));
+        assertNull(dao.getById(1));
     }
 
     /**
@@ -110,22 +114,22 @@ class UserDAOTest {
      */
     @Test
     void updateSuccess() {
-        String newLastName = "Davis";
-        User userToUpdate = dao.getById(3);
+        String newLastName = "Marks";
+        User userToUpdate = dao.getById(1);
         userToUpdate.setLastName(newLastName);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = dao.getById(1);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
 
     /**
      * Verify successful get by property (equal match)
-     */
+*/
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("lastName", "Curry");
+        List<User> users = dao.getByPropertyEqual("firstName", "Alex");
         assertEquals(1, users.size());
-        assertEquals(3, users.get(0).getId());
+        assertEquals(1, users.get(0).getId());
     }
 
     /**
@@ -133,7 +137,7 @@ class UserDAOTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "c");
-        assertEquals(3, users.size());
+        List<User> users = dao.getByPropertyLike("firstName", "Alex");
+        assertEquals(1, users.size());
     }
 }
