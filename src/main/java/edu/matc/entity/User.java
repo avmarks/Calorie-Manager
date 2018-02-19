@@ -3,11 +3,11 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * This class represents a user
- *
- * @author Alex Marks
+ * The type User.
  */
 @Entity(name = "User")
 @Table(name = "user")
@@ -24,6 +24,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Food> foodSet = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -119,6 +122,44 @@ public class User {
         this.id = id;
     }
 
+    /**
+     * Gets food set.
+     *
+     * @return the food set
+     */
+    public Set<Food> getFoodSet() {
+        return foodSet;
+    }
+
+    /**
+     * Sets food set.
+     *
+     * @param foodSet the food set
+     */
+    public void setFoodSet(Set<Food> foodSet) {
+        this.foodSet = foodSet;
+    }
+
+    /**
+     * Add food.
+     *
+     * @param food the food
+     */
+    public void addFood(Food food) {
+        foodSet.add(food);
+        food.setUser(this);
+    }
+
+    /**
+     * Remove food.
+     *
+     * @param food the food
+     */
+    public void removeFood(Food food) {
+        foodSet.remove(food);
+        food.setUser(null);
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -128,5 +169,6 @@ public class User {
                 ", userName='" + userName + '\'' +
                 '}';
     }
+
 
 }
