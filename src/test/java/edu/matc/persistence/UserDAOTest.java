@@ -20,6 +20,7 @@ class UserDAOTest {
     UserDAO dao;
 
     /**
+     *
      * The set up.
      */
     @BeforeEach
