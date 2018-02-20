@@ -118,7 +118,7 @@ public class Food {
      * @param foodName     the food name
      * @param foodCalories the food calories
      */
-    public Food(User user, String foodName, int foodCalories) {
+    public Food( String foodName, int foodCalories, User user) {
         this.user = user;
         this.foodName = foodName;
         this.foodCalories = foodCalories;

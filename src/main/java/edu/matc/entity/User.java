@@ -143,7 +143,6 @@ public class User {
     /**
      * Add food.
      *
-     * @param food the food
      */
     public void addFood(Food food) {
         foodSet.add(food);

@@ -62,59 +62,30 @@ class UserDAOTest {
 
 
 
-    /**
-     * Verify successful insert of a user
-     *
+
     @Test
     void insertSuccess() {
 
-        User newUser = new User("Fred", "Flintstone", "helloFred", 4);
-        int id = dao.insert(newUser);
-        assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
-    }
-
-    /**
-     * Verify successful insert of a user
-     **
-    @Test
-    void insertWithFoodSuccess() {
-
         User newUser = new User("Fred", "Flintstone", "fflintstone", 4);
-
-        String foodName = "Havarti Cheese";
-        int foodCalories = 140;
-        Food food = new Food( newUser, foodName,foodCalories);
-
-        newUser.addFood(food);
-
         int id = dao.insert(newUser);
-
-        assertNotEquals(0,id);
+        assertNotEquals(0, id);
         User insertedUser = dao.getById(id);
+        assertNotNull(insertedUser);
         assertEquals("Fred", insertedUser.getFirstName());
-        assertEquals(1, insertedUser.getFoodSet().size());
-        // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 
-    /**
-     * Verify successful delete of user
-     * This needs to be worked on b/c one to many foreign key r-p*
+
+
+
     @Test
     void deleteSuccess() {
         dao.delete(dao.getById(1));
         assertNull(dao.getById(1));
     }
 
-    /**
-     * Verify successful update of user
-     */
+
     @Test
     void updateSuccess() {
         String newLastName = "Marks";
@@ -125,9 +96,7 @@ class UserDAOTest {
         assertEquals(newLastName, retrievedUser.getLastName());
     }
 
-    /**
-     * Verify successful get by property (equal match)
-*/
+
     @Test
     void getByPropertyEqualSuccess() {
         List<User> users = dao.getByPropertyEqual("firstName", "Alex");
