@@ -18,7 +18,7 @@ public class FoodDAOTest {
     /**
      * The Dao.
      */
-    FoodDAO dao;
+
     GenericDAO genericDAO;
 
     /**
@@ -26,7 +26,7 @@ public class FoodDAOTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new FoodDAO();
+
         genericDAO = new GenericDAO(Food.class);
 
         Database database = Database.getInstance();
@@ -39,7 +39,7 @@ public class FoodDAOTest {
      */
     @Test
     void getAllFoodsSuccess() {
-        List<Food> foodList = dao.getAllFoods();
+        List<Food> foodList = genericDAO.getAll();
         assertEquals(2, foodList.size());
     }
 
@@ -58,17 +58,18 @@ public class FoodDAOTest {
      */
     @Test
     void insertSuccess() {
-        UserDAO userDAO = new UserDAO();
-        User user = userDAO.getById(1);
+        //UserDAO userDAO = new UserDAO();
+        GenericDAO userDAO = new GenericDAO(User.class);
+        User user = (User)userDAO.getById(1);
         String foodName = "Jalapeno";
         Food newFood = new Food(foodName,29, user);
         user.addFood(newFood);
 
 
-        int id = dao.insert(newFood);
+        int id = genericDAO.insert(newFood);
 
         assertNotEquals(0,id);
-        Food insertedFood= dao.getById(id);
+        Food insertedFood= (Food)genericDAO.getById(id);
         assertNotNull(insertedFood.getUser());
         assertEquals("Jalapeno", insertedFood.getFoodName());
         assertNotNull(insertedFood.getUser());
@@ -82,8 +83,8 @@ public class FoodDAOTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(2));
-        assertNull(dao.getById(2));
+        genericDAO.delete(genericDAO.getById(2));
+        assertNull(genericDAO.getById(2));
     }
 
     /**
@@ -92,10 +93,10 @@ public class FoodDAOTest {
     @Test
     void updateSuccess() {
         String foodName = "Kiwi";
-        Food foodToUpdate = dao.getById(2);
+        Food foodToUpdate = (Food)genericDAO.getById(2);
         foodToUpdate.setFoodName(foodName);
-        dao.saveOrUpdate(foodToUpdate);
-        Food retrievedFood = dao.getById(2);
+        genericDAO.saveOrUpdate(foodToUpdate);
+        Food retrievedFood = (Food)genericDAO.getById(2);
         assertEquals(foodToUpdate, retrievedFood);
     }
 
@@ -104,7 +105,7 @@ public class FoodDAOTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Food> foodList = dao.getByPropertyEqual("foodName", "strawberry");
+        List<Food> foodList = genericDAO.getByPropertyEqual("foodName", "strawberry");
         assertEquals(1, foodList.size());
         assertEquals(1,foodList.get(0).getId());
     }
@@ -114,7 +115,7 @@ public class FoodDAOTest {
      */
     @Test
     void getByPropertySuccess() {
-        List<Food> foodList = dao.getByPropertyLike("foodName", "b");
+        List<Food> foodList = genericDAO.getByPropertyLike("foodName", "b");
         assertEquals(1, foodList.size());
     }
 

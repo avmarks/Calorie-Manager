@@ -37,14 +37,6 @@ class UserDAOTest {
         assertEquals(4, users.size());
     }
 
-    /**
-     * Verifies the getUsersByLastName is a success.
-     */
-    @Test
-    void getUsersByLastNameSuccess() {
-        List<User> users = genericDAO.getUsersByLastName("MARKS");
-        assertEquals(3, users.size());
-    }
 
     /**
      * Verifies that a user is returned by entering an id
