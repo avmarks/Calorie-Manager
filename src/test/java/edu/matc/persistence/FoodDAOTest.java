@@ -19,6 +19,7 @@ public class FoodDAOTest {
      * The Dao.
      */
     FoodDAO dao;
+    GenericDAO genericDAO;
 
     /**
      * Sets up.
@@ -26,6 +27,7 @@ public class FoodDAOTest {
     @BeforeEach
     void setUp() {
         dao = new FoodDAO();
+        genericDAO = new GenericDAO(Food.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -46,7 +48,7 @@ public class FoodDAOTest {
      */
     @Test
     void getByIdSuccess() {
-        Food retrievedFood = dao.getById(1);
+        Food retrievedFood = (Food)genericDAO.getById(1);
         assertNotNull(retrievedFood);
         assertEquals("strawberry", retrievedFood.getFoodName());
     }
@@ -58,7 +60,7 @@ public class FoodDAOTest {
     void insertSuccess() {
         UserDAO userDAO = new UserDAO();
         User user = userDAO.getById(1);
-        String foodName = "Jalopeno";
+        String foodName = "Jalapeno";
         Food newFood = new Food(foodName,29, user);
         user.addFood(newFood);
 
@@ -68,7 +70,7 @@ public class FoodDAOTest {
         assertNotEquals(0,id);
         Food insertedFood= dao.getById(id);
         assertNotNull(insertedFood.getUser());
-        assertEquals("Jalopeno", insertedFood.getFoodName());
+        assertEquals("Jalapeno", insertedFood.getFoodName());
         assertNotNull(insertedFood.getUser());
         assertEquals("Alex", insertedFood.getUser().getFirstName());
 
@@ -94,7 +96,7 @@ public class FoodDAOTest {
         foodToUpdate.setFoodName(foodName);
         dao.saveOrUpdate(foodToUpdate);
         Food retrievedFood = dao.getById(2);
-        assertEquals(foodName, retrievedFood.getFoodName());
+        assertEquals(foodToUpdate, retrievedFood);
     }
 
     /**

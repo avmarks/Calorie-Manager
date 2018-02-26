@@ -2,6 +2,7 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * This class represents food
@@ -125,7 +126,25 @@ public class Food {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Food food = (Food) o;
+        return id == food.id &&
+                foodCalories == food.foodCalories &&
+                Objects.equals(user, food.user) &&
+                Objects.equals(foodName, food.foodName);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, user, foodName, foodCalories);
+    }
+
     /**
+
      * Instantiates a new Food.
      */
     public Food() {

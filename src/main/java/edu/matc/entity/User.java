@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -59,23 +60,9 @@ public class User {
         return firstName;
     }
 
-    /**
-     * Sets first name.
-     *
-     * @param firstName the first name
-     */
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    /**
-     * Gets last name.
-     *
-     * @return the last name
-     */
-    public String getLastName() {
-        return lastName;
-    }
+
+
 
     /**
      * Sets last name.
@@ -86,23 +73,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    /**
-     * Gets user name.
-     *
-     * @return the user name
-     */
-    public String getUserName() {
-        return userName;
-    }
 
-    /**
-     * Sets user name.
-     *
-     * @param userName the user name
-     */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
     /**
      * Gets id.
@@ -149,15 +120,24 @@ public class User {
         food.setUser(this);
     }
 
-    /**
-     * Remove food.
-     *
-     * @param food the food
-     */
-    public void removeFood(Food food) {
-        foodSet.remove(food);
-        food.setUser(null);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(userName, user.userName);
     }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(firstName, lastName, userName, id);
+    }
+
+
 
     @Override
     public String toString() {

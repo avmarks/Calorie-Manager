@@ -8,4 +8,8 @@
 | 2/12/18 | Working on design and Problem statement| 5 | 
 | 2/13/18 | Adding DAO and database design| 2 | 
 | 2/18/18 | Adding crud methods, unit tests and one2many hibernate work| 9 | 
+| 2/20/18 | Adding more unit tests| 2 | 
+| 2/24/18 | Worked on AWS. Got stuck trying to connect to server instance, no avail| 8.5 |
+| 2/25/18 | Adding the generic DAO| 4 |  
+
    

@@ -16,12 +16,16 @@
         <thead>
         <th>Name</th>
         <th>User Name</th>
+        <th>Food</th>
         </thead>
         <tbody>
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.firstName} ${user.lastName}</td>
                 <td>${user.userName}</td>
+                <td>
+                <c:forEach var="food" items="${user.foodSet}">
+                    ${food.id} ${food.foodName} <br></c:forEach></td>
             </tr>
         </c:forEach>
         </tbody>
