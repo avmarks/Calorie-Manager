@@ -7,4 +7,35 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 <display-name>Archetype Created Web Application</display-name>
+
+    <!-- Tell the server to use form-based authentication. -->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/login_error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+
+    <!-- Secure a single page vs. a directory -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>search_user</web-resource-name>
+            <!--<url-pattern>/investing/*</url-pattern>-->
+            <url-pattern>/search_user.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <!--<role-name>registered-user</role-name>-->
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+   <!-- <security-role>
+        <role-name>registered-user</role-name>
+    </security-role>-->
+
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
 </web-app>
