@@ -12,5 +12,7 @@
 | 2/23/18 | Working on peer reviews | 2.5| 
 | 2/24/18 | Worked on AWS. Got stuck trying to connect to server instance, no avail| 8.5 |
 | 2/25/18 | Adding the generic DAO| 4 |  
-| 2/26/18 | Authentication work| 4 |  
+| 2/26/18 | Authentication work| 4 |
+| 2/28/18 | Deployed to AWS| 4 |   
+| 3/1/18 | Updated password for sql, ran sql scripts for tables on EC@2 instance| 4 |   
    

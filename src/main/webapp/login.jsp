@@ -11,7 +11,7 @@
     <title>Login</title>
 </head>
 <body>
-<FORM ACTION="j_security_check" METHOD="POST">
+<FORM ACTION="j_security_check" METHOD="POST" class="form-horizontal">
     <TABLE>
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
         <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">

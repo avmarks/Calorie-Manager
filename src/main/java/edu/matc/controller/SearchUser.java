@@ -13,7 +13,6 @@ import java.io.IOException;
 
 /**
  * A simple servlet to welcome the user.
- * @author pwaite
  */
 
 @WebServlet(
@@ -24,16 +23,14 @@ public class SearchUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-       // UserData userData = new UserData();
-        GenericDAO userDAO = new GenericDAO(User.class);
-
-        if(req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", userDAO.getUsersByLastName(req.getParameter("lastName")));
+        GenericDAO userDao = new GenericDAO(User.class);
+        if (req.getParameter("submit").equals("search")) {
+            req.setAttribute("users", userDao.getByPropertyLike("lastName", req.getParameter("searchTerm")));
         } else {
-            req.setAttribute("users", userDAO.getAll());
+            req.setAttribute("users", userDao.getAll());
         }
 
-        req.setAttribute("users", userDAO.getAll());
+        req.setAttribute("users", userDao.getAll());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

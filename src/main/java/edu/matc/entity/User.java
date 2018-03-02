@@ -14,10 +14,23 @@ import java.util.Set;
 @Table(name = "user")
 public class User {
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+
+    public String getUserName() {
+        return userName;
+    }
+
     @Column(name = "user_name")
     private String userName;
 
@@ -63,6 +76,15 @@ public class User {
 
 
 
+
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
+    public String getLastName() {
+        return lastName;
+    }
 
     /**
      * Sets last name.
