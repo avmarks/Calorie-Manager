@@ -60,8 +60,8 @@ class UserDAOTest {
         User insertedUser = (User)genericDAO.getById(id);
         assertNotNull(insertedUser);
         assertEquals("Fred", insertedUser.getFirstName());
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+
+
     }
 
 
