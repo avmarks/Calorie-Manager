@@ -14,5 +14,6 @@
 | 2/25/18 | Adding the generic DAO| 4 |  
 | 2/26/18 | Authentication work| 4 |
 | 2/28/18 | Deployed to AWS| 4 |   
-| 3/1/18 | Updated password for sql, ran sql scripts for tables on EC@2 instance| 4 |   
+| 3/1/18 | Updated password for sql, ran sql scripts for tables on EC@2 instance| 4 |
+| 3/4/18 | Wrote review for presentation. Tinkered around trying to figure out login to no avail again| 4 |      
    
