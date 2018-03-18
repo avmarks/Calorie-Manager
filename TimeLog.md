@@ -17,4 +17,6 @@
 | 3/1/18 | Updated password for sql, ran sql scripts for tables on EC@2 instance| 4 |
 | 3/4/18 | Wrote review for presentation. Tinkered around trying to figure out login to no avail again| 4 |    
 | 3/7/18 | Searched for connector on aws instance, managed to drop it from desktop| 4 |   
+| 3/8/18 | Fixed "login failed" issued. Everything is working on aws| 3 |
+| 3/17/18 | Completed SOAP activities for week 8| 4 |
    
