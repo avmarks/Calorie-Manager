@@ -1,0 +1,156 @@
+[DEBUG] 2018-02-15 14:05:03.458 [main] UserDAO - Searching for user with lastName = Curry
+[DEBUG] 2018-02-15 14:05:03.711 [main] UserDAO - Searching for user with lastName = c
+[DEBUG] 2018-02-18 13:17:20.847 [main] UserDAO - Searching for user with lastName = Marks
+[DEBUG] 2018-02-18 13:17:21.056 [main] UserDAO - Searching for user with lastName = M
+[DEBUG] 2018-02-18 15:00:31.259 [main] UserDAO - Searching for user with lastName = Marks
+[DEBUG] 2018-02-18 15:00:31.403 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:19:51.012 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:19:51.133 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:19:51.135 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:19:51.295 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:19:51.298 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:19:51.313 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:19:51.323 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:19:51.338 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:19:51.372 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:20:39.334 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:20:39.456 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:20:39.458 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:20:39.619 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:20:39.621 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:20:39.643 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:20:39.653 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:20:39.666 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:20:39.697 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:22:36.551 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:22:36.744 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:22:36.746 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:22:36.904 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:22:36.906 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:22:36.924 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:22:36.932 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:22:36.949 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:22:36.968 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:25:14.209 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:25:14.273 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:25:25.147 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:25:25.226 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:25:46.168 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:25:46.241 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:26:36.325 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:26:36.387 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:27:07.788 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:27:07.848 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 15:27:39.853 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:28:23.683 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:06.103 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:53.280 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:53.393 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:29:53.396 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:29:53.537 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:53.547 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:53.557 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:29:53.592 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:30:03.349 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:30:03.469 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2018-02-18 15:30:03.470 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 15:30:03.621 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:30:03.631 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:30:03.640 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 15:30:03.675 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2018-02-18 16:11:22.800 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[ERROR] 2018-02-18 16:11:22.914 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[DEBUG] 2018-02-18 16:11:22.917 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 16:11:23.075 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[ERROR] 2018-02-18 16:11:23.089 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[ERROR] 2018-02-18 16:11:23.102 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[ERROR] 2018-02-18 16:11:23.135 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mydatabase`.`food`, CONSTRAINT `user_id___fk` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[ERROR] 2018-02-18 16:32:50.291 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:32:50.407 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:32:50.409 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 16:32:50.562 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:32:50.581 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:32:50.602 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:32:50.633 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:40.874 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:40.995 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:33:40.997 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 16:33:41.152 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:41.170 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:41.184 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:41.216 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:33:51.582 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:34:14.210 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:36:16.476 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:36:29.603 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:37:26.771 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:37:52.089 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:38:05.218 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:38:05.326 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:38:05.328 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 16:38:05.498 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:38:05.514 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:38:05.533 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:38:05.563 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:39:11.461 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:39:11.526 [main] UserDAO - Searching for user with lastName = M
+[ERROR] 2018-02-18 16:40:22.459 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:40:22.537 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 16:41:07.426 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:41:07.500 [main] UserDAO - Searching for user with lastName = Marks
+[ERROR] 2018-02-18 16:41:29.949 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:41:30.015 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:42:11.760 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:42:11.837 [main] UserDAO - Searching for user with firstName = Emily
+[ERROR] 2018-02-18 16:42:53.860 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:42:53.933 [main] UserDAO - Searching for user with firstName = Emily
+[ERROR] 2018-02-18 16:43:03.494 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:43:03.562 [main] UserDAO - Searching for user with firstName = Emily
+[ERROR] 2018-02-18 16:43:11.226 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:43:11.302 [main] UserDAO - Searching for user with firstName = Emily
+[ERROR] 2018-02-18 16:43:31.681 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:45:51.398 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:45:51.471 [main] UserDAO - Searching for user with firstName = Emily
+[ERROR] 2018-02-18 16:46:28.381 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:46:28.449 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:46:32.817 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:46:32.887 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:46:47.020 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:49:18.045 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:49:18.223 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:49:18.224 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:49:18.360 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:49:18.363 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:49:18.381 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:49:18.396 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:49:18.410 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:49:18.430 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:51:38.409 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:51:38.584 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:51:38.585 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:51:38.742 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:51:38.744 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:51:38.760 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:51:38.773 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:51:38.788 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:51:38.809 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:05.221 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:05.377 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:52:05.378 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:52:05.522 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:52:05.524 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:52:05.540 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:05.554 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:05.576 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:05.595 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:19.533 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:30.443 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:44.591 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:44.756 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:52:44.757 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:52:44.907 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[DEBUG] 2018-02-18 16:52:44.909 [main] UserDAO - Searching for user with firstName = Alex
+[ERROR] 2018-02-18 16:52:44.923 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:44.935 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:44.950 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
+[ERROR] 2018-02-18 16:52:44.971 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'user_id___fk'; check that column/key exists
