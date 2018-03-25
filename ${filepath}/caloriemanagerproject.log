@@ -560,3 +560,11 @@
 [DEBUG] 2018-03-24 18:59:35.663 [main] GenericDAO - Searching for user with foodName = b
 [DEBUG] 2018-03-24 18:59:35.774 [main] GenericDAO - Searching for user with firstName = Alex
 [DEBUG] 2018-03-24 18:59:35.787 [main] GenericDAO - Searching for user with firstName = Alex
+[DEBUG] 2018-03-24 19:15:42.238 [main] GenericDAO - Searching for user with foodName = strawberry
+[DEBUG] 2018-03-24 19:15:42.427 [main] GenericDAO - Searching for user with foodName = b
+[DEBUG] 2018-03-24 19:15:42.543 [main] GenericDAO - Searching for user with firstName = Alex
+[DEBUG] 2018-03-24 19:15:42.559 [main] GenericDAO - Searching for user with firstName = Alex
+[DEBUG] 2018-03-24 19:29:59.744 [main] GenericDAO - Searching for user with foodName = strawberry
+[DEBUG] 2018-03-24 19:29:59.964 [main] GenericDAO - Searching for user with foodName = b
+[DEBUG] 2018-03-24 19:30:00.072 [main] GenericDAO - Searching for user with firstName = Alex
+[DEBUG] 2018-03-24 19:30:00.087 [main] GenericDAO - Searching for user with firstName = Alex
