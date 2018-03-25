@@ -19,4 +19,5 @@
 | 3/7/18 | Searched for connector on aws instance, managed to drop it from desktop| 4 |   
 | 3/8/18 | Fixed "login failed" issued. Everything is working on aws| 3 |
 | 3/17/18 | Completed SOAP activities for week 8| 4 |
+| 3/24/18 | Added styling to login and error page| 4 |
    
