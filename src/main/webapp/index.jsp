@@ -15,7 +15,9 @@
                    <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">
                    <INPUT TYPE="SUBMIT" VALUE="Log In" class="login loginmodal-submit">
             </FORM>
-        </div></div></div>
+        </div>
+    </div>
+
 
 </body>
 </html>
