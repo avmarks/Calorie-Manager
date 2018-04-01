@@ -20,4 +20,6 @@
 | 3/8/18 | Fixed "login failed" issued. Everything is working on aws| 3 |
 | 3/17/18 | Completed SOAP activities for week 8| 4 |
 | 3/24/18 | Added styling to login and error page| 4 |
+| 3/25/18 | Peer review| .5 |
+| 3/26/18 - 4/1/18 | Finished working on week 8 activities. Did activities 1-4, week 9| 10 |
    
