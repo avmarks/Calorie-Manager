@@ -1,7 +1,12 @@
 package edu.matc.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
 
 /**
@@ -9,6 +14,7 @@ import java.util.Objects;
  */
 @Entity(name = "Food")
 @Table(name = "food")
+@XmlAccessorType( XmlAccessType.FIELD)
 public class Food {
 
     @Id
@@ -19,6 +25,8 @@ public class Food {
      */
     public int id;
 
+    @JsonIgnore
+    @XmlTransient
     @ManyToOne
     private User user;
 

@@ -1,19 +1,26 @@
 package edu.matc.entity;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
 
 @Entity(name = "Role")
 @Table(name = "role")
+@XmlAccessorType( XmlAccessType.FIELD)
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @JsonIgnore
     @ManyToOne
+    @XmlTransient
     @JoinColumn(name = "user_id",
             foreignKey = @ForeignKey(name = "role_user_user_id_fk")
     )

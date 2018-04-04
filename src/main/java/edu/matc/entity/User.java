@@ -1,15 +1,24 @@
 package edu.matc.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  * The type User.
  */
+@XmlRootElement(name = "user")
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity(name = "User")
 @Table(name = "user")
 public class User {
@@ -19,11 +28,13 @@ public class User {
     }
 
     public void setUserName(String userName) {
+
         this.userName = userName;
     }
 
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "last_name")
     private String lastName;
 
@@ -39,6 +50,8 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @JsonIgnore
+    @XmlTransient
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Food> foodSet = new HashSet<>();
 
@@ -170,6 +183,8 @@ public class User {
                 ", userName='" + userName + '\'' +
                 '}';
     }
+
+
 
 
 }
