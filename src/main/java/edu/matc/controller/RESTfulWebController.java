@@ -20,7 +20,7 @@ import javax.xml.bind.Marshaller;
 import java.io.StringWriter;
 import java.util.List;
 
-@Path("/RestUsers")
+@Path("/Users")
 public class RESTfulWebController {
 
     @GET
