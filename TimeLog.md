@@ -22,4 +22,10 @@
 | 3/24/18 | Added styling to login and error page| 4 |
 | 3/25/18 | Peer review| .5 |
 | 3/26/18 - 4/1/18 | Finished working on week 8 activities. Did activities 1-4, week 9| 10 |
+| 4/1/18 | Did Activities for REST, got stuck| 6 |
+| 4/3/18 | Did branching ex-se | 1|
+| 4/3/18 | Team work | 2|
+| 4/4/18 | Finished REST activities | 2|
+|4/4/18 | Worked on team project, added tests, updated project plan, merged branch | 5|
+
    
