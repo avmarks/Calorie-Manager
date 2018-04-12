@@ -25,7 +25,7 @@
 | 4/1/18 | Did Activities for REST, got stuck| 6 |
 | 4/3/18 | Did branching ex-se | 1|
 | 4/3/18 | Team work | 2|
-| 4/4/18 | Finished REST activities | 2|
+| 4/4/18 | Finished REST activities, added peer review| 2|
 |4/4/18 | Worked on team project, added tests, updated project plan, merged branch | 5|
 
    
