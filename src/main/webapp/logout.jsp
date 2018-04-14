@@ -5,12 +5,13 @@
   Time: 11:18 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Logout</title>
-</head>
-<body>
+<%@ page session="true"%>
+<h3>User '<%=request.getRemoteUser()%>' has been logged out.</h3>
 
-</body>
-</html>
+<br/><br/>
+<%--This is a function to redirect the user to the index page once user logs out  --%>
+<script>
+    var timer = setTimeout(function() {
+        window.location='index.jsp'
+    }, 2000);
+</script>

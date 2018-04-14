@@ -12,7 +12,8 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 /**
- * A generic DOA is inspired by the http://rodrigouchoa.wordpress.com
+ * A generic DAO is inspired by the http://rodrigouchoa.wordpress.com
+ * and Paula Waite
  */
 public class GenericDAO<T> {
     private Class<T> type;

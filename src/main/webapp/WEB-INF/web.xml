@@ -24,6 +24,10 @@
             <web-resource-name>search_user</web-resource-name>
             <!--<url-pattern>/investing/*</url-pattern>-->
             <url-pattern>/search_user.jsp</url-pattern>
+            <url-pattern>/search_food.jsp</url-pattern>
+            <url-pattern>/add_food.jsp</url-pattern>
+            <url-pattern>/add_recipe.jsp</url-pattern>
+            <url-pattern>/recipe_history.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <!--<role-name>registered-user</role-name>-->
