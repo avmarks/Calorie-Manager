@@ -19,7 +19,7 @@
             <li><a href="add_food.jsp">Add Food Item</a></li>
             <li><a href="add_recipe.jsp">Add Recipe</a></li>
             <li><a href="recipe_history.jsp">Recipe History</a></li>
-            <li><a href="logout.jsp">Logout</a></li>
+            <li><a href="logout">Logout</a></li>
         </ul>
     </div>
 </nav>
@@ -28,7 +28,6 @@
         <h2>Search users:</h2>
         <form action="searchUser" class="form-inline">
             <div class="form-group">
-                <label for="searchTerm">Search</label>
                 <input type="text" class="form-control" id="searchTerm" name="searchTerm" aria-describedby="searchTermHelp" placeholder="Enter last name">
             </div>
             <button type="submit" name="submit" value="search" class="btn btn-primary">Search</button>
