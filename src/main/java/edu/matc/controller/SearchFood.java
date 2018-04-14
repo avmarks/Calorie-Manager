@@ -25,9 +25,10 @@ public class SearchFood extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDAO foodDao = new GenericDAO(Food.class);
+        if (req.getParameter("submit").equals("search")) {
+            req.setAttribute("foods", foodDao.getByPropertyLike("foodName", req.getParameter("searchTerm")));
+        }
 
-
-        req.setAttribute("foods", foodDao.getAll());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/foodSearchResults.jsp");
         dispatcher.forward(req, resp);
     }
