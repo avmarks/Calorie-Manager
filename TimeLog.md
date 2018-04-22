@@ -28,5 +28,8 @@
 | 4/4/18 | Finished REST activities, added peer review| 2|
 |4/4/18 | Worked on team project, added tests, updated project plan, merged branch | 5|
 |4/12/18 | Adding additional jsp pages. Populating db with additional users and food items | 2|
+|4/19/18 | Worked on food retrieval page. Logic behind the scenes is still difficult to comprehend | 2|
+| 4/21/18 | Added functionality for adding food item, struggled to display foods by spec user and specific searchTerm| 12|
+
 
    

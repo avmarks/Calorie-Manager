@@ -17,7 +17,7 @@
 </ul>
     <div align="center" class="modal-dialog">
         <div class="loginmodal-container">
-
+            <h1>Welcome Back</h1><br>
             <FORM ACTION="j_security_check" METHOD="POST" class="form-horizontal">
                    <INPUT TYPE="TEXT" NAME="j_username" placeholder="Username">
                    <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">

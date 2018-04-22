@@ -1,6 +1,4 @@
 <%@include file="taglib.jsp"%>
-<c:set var="title" value="Search Results" />
-<%@include file="head.jsp"%>
 
 <script type="text/javascript" class="init">
     $(document).ready( function () {
@@ -8,6 +6,8 @@
     } );
 </script>
 <html>
+<%@include file="head.jsp"%>
+<c:set var="title" value="Search Results" />
 <body>
 
 <div class="container-fluid">

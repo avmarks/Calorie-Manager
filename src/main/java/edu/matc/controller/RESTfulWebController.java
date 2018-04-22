@@ -37,6 +37,9 @@ public class RESTfulWebController {
         return Response.status(200).entity(arrayToJson).build();
 
     }
+    
+    
+    
     @GET
     @Path("/xml")
     // Define what type of content is produced

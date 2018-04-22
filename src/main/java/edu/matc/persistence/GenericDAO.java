@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -74,19 +75,27 @@ public class GenericDAO<T> {
         return list;
 
     }
+    /**
+     * Gets user id.
+     *
+     * @param value the value
+     * @return the user id
+     */
+    public List<T> getUserID(String value) {
 
-    public List<T> getUsersByLastName(String lastName) {
+
+
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
-        //beginning of the where
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "%" + lastName + "%"));
-        List<T> list = session.createQuery(query).getResultList();
+        Expression<String> propertyPath = root.get("userName");
+        query.where(builder.like(propertyPath, "%" + value + "%"));
+        List<T> userID = session.createQuery(query).getResultList();
         session.close();
-        return list;
+        return userID;
     }
+
 
     /**
      * update user
@@ -157,6 +166,27 @@ public class GenericDAO<T> {
 
         List<T> users = session.createQuery( query ).getResultList();
         session.close();
+        return users;
+    }
+
+
+
+
+
+
+
+    public List<T> getByWhereAndLike(String propertyName, String value) {
+
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from( type);
+        Expression<String> propertyPath = root.get(propertyName);
+       // User user = new User();
+
+        query.select(root).where(builder.and(builder.like(propertyPath, "%" + value + "%")), builder.equal(propertyPath, true));
+        List<T> users = session.createQuery( query ).getResultList();
+
         return users;
     }
 

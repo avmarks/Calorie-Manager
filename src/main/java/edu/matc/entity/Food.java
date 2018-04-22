@@ -41,7 +41,7 @@ public class Food {
      * The Food calories.
      */
     @Column(name = "food_calories")
-    public int foodCalories;
+    public double foodCalories;
 
     /**
      * Gets id.
@@ -84,7 +84,7 @@ public class Food {
      *
      * @return the food calories
      */
-    public int getFoodCalories() {
+    public double getFoodCalories() {
         return foodCalories;
     }
 
@@ -93,7 +93,7 @@ public class Food {
      *
      * @param foodCalories the food calories
      */
-    public void setFoodCalories(int foodCalories) {
+    public void setFoodCalories(double foodCalories) {
         this.foodCalories = foodCalories;
     }
 
@@ -127,7 +127,7 @@ public class Food {
      * @param foodName     the food name
      * @param foodCalories the food calories
      */
-    public Food( String foodName, int foodCalories, User user) {
+    public Food( String foodName, double foodCalories, User user) {
         this.user = user;
         this.foodName = foodName;
         this.foodCalories = foodCalories;
