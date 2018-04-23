@@ -6,10 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.util.List;
 
 /**
@@ -175,17 +172,20 @@ public class GenericDAO<T> {
 
 
 
-    public List<T> getByWhereAndLike(String propertyName, String value) {
+    public List<User> getByWhereAndLike(String propertyName, String value, int userId, String idValue) {
 
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<T> query = builder.createQuery( type );
-        Root<T> root = query.from( type);
-        Expression<String> propertyPath = root.get(propertyName);
-       // User user = new User();
-
-        query.select(root).where(builder.and(builder.like(propertyPath, "%" + value + "%")), builder.equal(propertyPath, true));
-        List<T> users = session.createQuery( query ).getResultList();
+        CriteriaQuery<User> query = builder.createQuery( User.class );
+        Root<User> root = query.from( User.class );
+        root.fetch( "foodSet", JoinType.LEFT);
+        query.select(root).where(
+                builder.and(
+                        builder.equal(root.get(propertyName), value),
+                        builder.equal(root.get(String.valueOf(userId)), idValue)
+                )
+        );
+        List<User> users = session.createQuery( query ).getResultList();
 
         return users;
     }

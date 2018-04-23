@@ -1,46 +1,70 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<c:set var="title" value="Search Results" />
+<jsp:include page="taglib.jsp" />
 <html>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#userTable").dataTable({
-                "sPaginationType": "full_numbers",
-                "bJQueryUI": true
-            });
-        });
-    </script>
-
-
-
-
+<jsp:include page="head.jsp" />
+<c:set var="title" value="Search Results" />
 <body>
-
+<%@include file="navbar.jsp"%>
 <div class="container-fluid">
     <h2>Search Results: </h2>
-    <table id="userTable" class="display" cellspacing="0" width="100%">
+    <table id="calculating" class="display" cellspacing="0" width="100%">
         <thead>
         <tr>
-            <th>User</th>
             <th>Food Name</th>
             <th>Calories</th>
             <th>Weight</th>
         </tr>
         </thead>
+        <tbody >
+            <tr>
+                <td>${foodName}</td>
+                <td>${foodCalorie}</td>
+                <td><input id="calculate"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <table id="userTable">
+
+        <thead>
+            <tr>
+                <th id="foodNameId">Food Name</th>
+                <th id="foodCalorieId">Calories</th>
+            </tr>
+        </thead>
+        <c:forEach var="foodItem" items="${foods}">
         <tbody>
             <tr>
 
-                <c:forEach var="thisFood" items="${foods}">
-                    <td>*</td>
-                    <td>${thisFood.foodName}</td>
-                    <td>${thisFood.foodCalories}</td>
-                    <td>"*"</td>
-                </c:forEach>
+                    <td>${foodItem.foodName}</td>
+                    <td>${foodItem.foodCalories}</td>
             </tr>
-
         </tbody>
+        </c:forEach>
     </table>
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+
+
+    $('#userTable').each(function () {
+        if ( $(this).find('td').length < 1 || $(this).find('td').is(':empty') ) {
+            $(this).hide();
+            $('#foodNameId').hide();
+            $('#foodCalorieId').hide();
+        } else {
+            $("#userTable").dataTable({
+                "sPaginationType": "full_numbers",
+                "bJQueryUI": true
+
+            });
+            $("#calculating").hide();
+        }
+        });
+
+
+</script>

@@ -1,15 +1,9 @@
 <%@include file="taglib.jsp"%>
-
-<script type="text/javascript" class="init">
-    $(document).ready( function () {
-        $('#userTable').DataTable();
-    } );
-</script>
 <html>
 <%@include file="head.jsp"%>
 <c:set var="title" value="Search Results" />
 <body>
-
+<%@include file="navbar.jsp"%>
 <div class="container-fluid">
     <h2>Search Results: </h2>
     <table id="userTable" class="display" cellspacing="0" width="100%">
@@ -34,3 +28,9 @@
 
 </body>
 </html>
+
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#userTable').DataTable();
+    } );
+</script>
