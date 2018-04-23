@@ -30,6 +30,6 @@
 |4/12/18 | Adding additional jsp pages. Populating db with additional users and food items | 2|
 |4/19/18 | Worked on food retrieval page. Logic behind the scenes is still difficult to comprehend | 2|
 | 4/21/18 | Added functionality for adding food item, struggled to display foods by spec user and specific searchTerm| 12|
-| 4/3/18 | Worked on rearranging the reusable html elements, added search by food term, by all functionality | 7|
+| 4/21/18 | Worked on rearranging the reusable html elements, added search by food term, by all functionality | 7|
 
    
