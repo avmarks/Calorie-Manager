@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlTransient;
 @Entity(name = "User")
 @Table(name = "user")
 public class User {
-
-
+    @Column(name = "password")
+    private String password;
 
     @Column(name = "first_name")
     private String firstName;
@@ -65,13 +65,13 @@ public class User {
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
-     * @param id        the id
+     * @param password the password
      */
-    public User(String firstName, String lastName, String userName, int id) {
+    public User(String firstName, String lastName, String userName, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
-        this.id = id;
+        this.password = password;
     }
 
 

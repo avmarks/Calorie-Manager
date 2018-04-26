@@ -54,7 +54,7 @@ class UserDAOTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("Fred", "Flintstone", "fflintstone", 4);
+        User newUser = new User("Fred", "Flintstone", "fflintstone", "chocolate");
         int id = genericDAO.insert(newUser);
         assertNotEquals(0, id);
         User insertedUser = (User)genericDAO.getById(id);
@@ -64,10 +64,10 @@ class UserDAOTest {
 
     }
 
-     */
+
     /**
      * Delete success.
-     */
+
     @Test
     void deleteSuccess() {
         genericDAO.delete(genericDAO.getById(1));

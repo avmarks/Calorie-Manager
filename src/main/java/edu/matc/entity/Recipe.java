@@ -2,6 +2,8 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * The type Recipe.
@@ -19,8 +21,11 @@ public class Recipe {
     @ManyToOne
     private User user;
 
-
+    @Column(name = "recipe_name")
     private String recipeName;
+
+    @OneToMany(mappedBy = "recipes", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Ingredient> ingredients = new HashSet<>();
 
     /**
      * Instantiates a new Recipe.
@@ -94,6 +99,24 @@ public class Recipe {
      */
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
+    }
+
+    /**
+     * Gets ingredients.
+     *
+     * @return the ingredients
+     */
+    public Set<Ingredient> getIngredients() {
+        return ingredients;
+    }
+
+    /**
+     * Sets ingredients.
+     *
+     * @param ingredients the ingredients
+     */
+    public void setIngredients(Set<Ingredient> ingredients) {
+        this.ingredients = ingredients;
     }
 
     @Override

@@ -8,6 +8,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
 
+/**
+ * The type Role.
+ */
 @XmlAccessorType( XmlAccessType.FIELD)
 @Entity(name = "Role")
 @Table(name = "role")
@@ -30,6 +33,9 @@ public class Role {
     @Column(name="role_name")
     private String roleName;
 
+    /**
+     * Instantiates a new Role.
+     */
     public Role() {
     }
 
@@ -37,8 +43,8 @@ public class Role {
      * Instantiates a new Role.
      *
      * @param user     the user
-     * @param userName the user name
      * @param roleName the role name
+     * @param userName the user name
      */
     public Role(User user, String roleName, String userName) {
         this.user = user;
@@ -46,26 +52,56 @@ public class Role {
         this.userName = userName;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
     public void setUser(User user) {
         this.user = user;
     }
 
+    /**
+     * Gets role name.
+     *
+     * @return the role name
+     */
     public String getRoleName() {
         return roleName;
     }
 
+    /**
+     * Sets role name.
+     *
+     * @param roleName the role name
+     */
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
