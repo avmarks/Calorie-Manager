@@ -1,14 +1,9 @@
 package edu.matc.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -23,14 +18,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "user")
 public class User {
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    public void setUserName(String userName) {
-
-        this.userName = userName;
-    }
 
     @Column(name = "first_name")
     private String firstName;
@@ -38,6 +26,11 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
     public String getUserName() {
         return userName;
     }
@@ -46,14 +39,19 @@ public class User {
     private String userName;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @JsonIgnore
     @XmlTransient
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Food> foodSet = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Role> userRoles = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Recipe> recipes = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -87,9 +85,6 @@ public class User {
     }
 
 
-
-
-
     /**
      * Gets first name.
      *
@@ -108,6 +103,25 @@ public class User {
         this.lastName = lastName;
     }
 
+
+    /**
+     * Sets first name.
+     *
+     * @param firstName the first name
+     */
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
+
+        this.userName = userName;
+    }
 
 
     /**
@@ -151,6 +165,7 @@ public class User {
     /**
      * Add food.
      *
+     * @param food the food
      */
     public void addFood(Food food) {
         foodSet.add(food);
@@ -186,7 +201,44 @@ public class User {
                 '}';
     }
 
+    //public List<Role> getRoles() {
+      //  return userRoles;
+    //}
 
 
+    /**
+     * Gets user roles.
+     *
+     * @return the user roles
+     */
+    public List<Role> getUserRoles() {
+        return userRoles;
+    }
 
+    /**
+     * Sets user roles.
+     *
+     * @param userRoles the user roles
+     */
+    public void setUserRoles(List<Role> userRoles) {
+        this.userRoles = userRoles;
+    }
+
+    /**
+     * Gets recipes.
+     *
+     * @return the recipes
+     */
+    public Set<Recipe> getRecipes() {
+        return recipes;
+    }
+
+    /**
+     * Sets recipes.
+     *
+     * @param recipes the recipes
+     */
+    public void setRecipes(Set<Recipe> recipes) {
+        this.recipes = recipes;
+    }
 }

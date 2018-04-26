@@ -19,7 +19,7 @@
             <tr>
                 <td>${foodName}</td>
                 <td>${foodCalorie}</td>
-                <td><input id="calculate"></td>
+                <td><input id="calculate" placeholder=" quick calculation"></td>
             </tr>
         </tbody>
     </table>

@@ -1,5 +1,4 @@
 package edu.matc.entity;
-
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.Objects;
 
+@XmlAccessorType( XmlAccessType.FIELD)
 @Entity(name = "Role")
 @Table(name = "role")
-@XmlAccessorType( XmlAccessType.FIELD)
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -19,11 +18,9 @@ public class Role {
     private int id;
 
     @JsonIgnore
-    @ManyToOne
     @XmlTransient
-    @JoinColumn(name = "user_id",
-            foreignKey = @ForeignKey(name = "role_user_user_id_fk")
-    )
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @Column(name="user_name")
@@ -36,6 +33,13 @@ public class Role {
     public Role() {
     }
 
+    /**
+     * Instantiates a new Role.
+     *
+     * @param user     the user
+     * @param userName the user name
+     * @param roleName the role name
+     */
     public Role(User user, String roleName, String userName) {
         this.user = user;
         this.roleName = roleName;
@@ -90,4 +94,5 @@ public class Role {
 
         return Objects.hash(id,  roleName, userName);
     }
+
 }

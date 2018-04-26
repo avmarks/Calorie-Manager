@@ -18,7 +18,9 @@
 
         <mapping class="edu.matc.entity.User"/>
         <mapping class="edu.matc.entity.Food"/>
-
+        <mapping class="edu.matc.entity.Role"/>
+        <mapping class="edu.matc.entity.Recipe"/>
+        <mapping class="edu.matc.entity.Ingredient"/>
     </session-factory>
 
 </hibernate-configuration>
