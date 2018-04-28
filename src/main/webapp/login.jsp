@@ -11,13 +11,13 @@
 <body>
 <ul>
     <li><a href="index.jsp">Home</a></li>
-    <li><a href="#news">Portfolio</a></li>
-    <li><a href="about.jsp">About</a></li>
+   <!-- <li><a href="#news">Portfolio</a></li>
+    <li><a href="about.jsp">About</a></li>-->
     <li><a href="search_user.jsp">Login</a></li>
 </ul>
     <div align="center" class="modal-dialog">
         <div class="loginmodal-container">
-            <h1>Welcome Back</h1><br>
+            <h1>Hello, my name is CalPal. What's yours?</h1><br>
             <FORM ACTION="j_security_check" METHOD="POST" class="form-horizontal">
                    <INPUT TYPE="TEXT" NAME="j_username" placeholder="Username">
                    <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">

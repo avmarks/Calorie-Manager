@@ -26,17 +26,9 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    /**
-     * Gets user name.
-     *
-     * @return the user name
-     */
-    public String getUserName() {
-        return userName;
-    }
-
     @Column(name = "user_name")
     private String userName;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,27 +44,6 @@ public class User {
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Recipe> recipes = new HashSet<>();
-
-    /**
-     * Instantiates a new User.
-     */
-    public User() {
-    }
-
-    /**
-     * Instantiates a new User.
-     *
-     * @param firstName the first name
-     * @param lastName  the last name
-     * @param userName  the user name
-     * @param password the password
-     */
-    public User(String firstName, String lastName, String userName, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userName = userName;
-        this.password = password;
-    }
 
 
     /**
@@ -123,6 +94,14 @@ public class User {
         this.userName = userName;
     }
 
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
+        return userName;
+    }
 
     /**
      * Gets id.
@@ -172,6 +151,62 @@ public class User {
         food.setUser(this);
     }
 
+
+
+    /**
+     * Instantiates a new User.
+     */
+    public User() {
+    }
+
+
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        userRoles.add(role);
+
+    }
+
+    /**
+     * Instantiates a new User.
+     *
+     * @param password  the password
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param foodSet   the food set
+     * @param userRoles the user roles
+     * @param recipes   the recipes
+     */
+    public User(String password, String firstName, String lastName, String userName, Set<Food> foodSet, List<Role> userRoles, Set<Recipe> recipes) {
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.foodSet = foodSet;
+        this.recipes = recipes;
+    }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", id=" + id +
+                ", foodSet=" + foodSet +
+                ", recipes=" + recipes +
+                '}';
+    }
+
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -188,22 +223,6 @@ public class User {
 
         return Objects.hash(firstName, lastName, userName, id);
     }
-
-
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId='" + id + '\'' +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", userName='" + userName + '\'' +
-                '}';
-    }
-
-    //public List<Role> getRoles() {
-      //  return userRoles;
-    //}
 
 
     /**
@@ -241,4 +260,24 @@ public class User {
     public void setRecipes(Set<Recipe> recipes) {
         this.recipes = recipes;
     }
+
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
 }

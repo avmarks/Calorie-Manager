@@ -21,8 +21,8 @@
 <body class="w3-light-grey">
 <ul>
     <li><a href="index.jsp">Home</a></li>
-    <li><a href="#news">Portfolio</a></li>
-    <li><a href="about.jsp">About</a></li>
+    <!--<li><a href="#news">Portfolio</a></li>
+    <li><a href="about.jsp">About</a></li>-->
     <li><a href="search_user.jsp">Login</a></li>
 </ul>
 
@@ -31,9 +31,8 @@
         Logo
     </div>
     <div class="w3-display-middle">
-        <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+        <h1 class="w3-jumbo w3-animate-top">CALORIE PAL</h1>
         <hr class="w3-border-grey" style="margin:auto;width:40%">
-        <p class="w3-large w3-center">45 days left</p>
     </div>
 
 </div>

@@ -31,5 +31,7 @@
 |4/19/18 | Worked on food retrieval page. Logic behind the scenes is still difficult to comprehend | 2|
 | 4/21/18 | Added functionality for adding food item, struggled to display foods by spec user and specific searchTerm| 12|
 | 4/21/18 | Worked on rearranging the reusable html elements, added search by food term, by all functionality | 7|
+| 4/26/18 | Created and annotated ingredient and recipe entities, populated the fields, updated the design | 12|
+| 4/26/18 | deployed changes to aws, struggled with logging into aws. Magically, it got resolved..| 5|
 
    

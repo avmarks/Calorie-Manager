@@ -48,7 +48,7 @@ public class AddFood extends HttpServlet {
 
         Food newFood = new Food(foodName, foodCalorie, userFood );
 
-        String confirmationMessage = "Item " + foodName + " with caloric value of " + "was successfully added!";
+        String confirmationMessage = "Item " + foodName + " with caloric value of " + foodCalorie +  " was successfully added!";
 
 
         if(!foodName.isEmpty()&&(foodCalorie != 0)) {

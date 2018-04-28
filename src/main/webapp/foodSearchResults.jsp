@@ -3,7 +3,7 @@
 <html>
 <jsp:include page="head.jsp" />
 <c:set var="title" value="Search Results" />
-<body>
+<body class="bgimg">
 <%@include file="navbar.jsp"%>
 <div class="container-fluid">
     <h2>Search Results: </h2>
@@ -68,3 +68,16 @@
 
 
 </script>
+<style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+        background: url('images/board_bread.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar-inverse .navbar-brand {
+        color: #5cb85c!important;
+    }
+</style>
