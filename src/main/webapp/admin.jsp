@@ -15,7 +15,7 @@
 <body class="bgimg">
 <%@include file="navbar.jsp"%>
 <div class="container">
-<h2>${Message}</h2>
+<h2>${deleteMessage}</h2><h2>${addMessage}</h2>
 
     <table class="display" cellspacing="0" width="100%" id="dataTable">
         <thead>
@@ -37,7 +37,7 @@
 
         <td><c:forEach var="role" items="${user.userRoles}"><input type="text" value="${role.roleName}"></c:forEach></td>
         <td >
-            <a href="deleteUser?userID=${user.id}" value="userID" class="btn btn-danger" role="button" id="deleteAction">Delete</a>
+            <a href="deleteUser?userID=${user.id}" value="userID" class="btn btn-danger" role="button">Delete</a>
         </td>
         <td>
             <a href="updateUser?userID=${user.id}" value="userID" class="btn btn-warning" role="button">Update</a>

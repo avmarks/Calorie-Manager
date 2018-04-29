@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h3>${Message}</h3>
+<h3>${deleteMessage}</h3>
 </body>
 </html>

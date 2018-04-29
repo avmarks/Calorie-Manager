@@ -14,12 +14,11 @@ import java.io.IOException;
 
 @WebServlet(
         name = "updateUser",
-        urlPatterns = {"/deleteUser"}
+        urlPatterns = {"/updateUser"}
 )
 public class UpdateUser extends HttpServlet{
     public void doGet (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
 
     }
 }

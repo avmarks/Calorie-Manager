@@ -25,16 +25,16 @@ public class DeleteUser extends HttpServlet{
         HttpSession session = request.getSession();
         GenericDAO genericDAO = new GenericDAO(User.class);
         GenericDAO userRole = new GenericDAO(Role.class);
+
         int userId = Integer.valueOf(request.getParameter("userID"));
 
         User user = (User)genericDAO.getById(userId);
+
         genericDAO.delete(user);
 
-        session.setAttribute("Message", "User " + user.getUserName() + " was deleted");
+        session.setAttribute("deleteMessage", "User " + user.getUserName() + " was deleted");
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("deleteUserSuccess.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/deleteUserSuccess.jsp");
         dispatcher.forward(request, response);
-
-        //response.sendRedirect("deleteUserSuccess.jsp");
     }
 }

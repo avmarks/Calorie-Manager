@@ -45,9 +45,9 @@ public class AddNewUser extends HttpServlet {
         if(!firstName.isEmpty() && !lastName.isEmpty() && !userName.isEmpty() && !password.isEmpty()) {
             newUser.addRole(role);
             genericDAO.insert(newUser);
-            session.setAttribute("Message", "New User has been added to the database of users");
+            session.setAttribute("addMessage", "New user " + userName + " has been added to the database of users");
         } else {
-            session.setAttribute("Message", "Please fill all the fields in order to register a new user.");
+            session.setAttribute("addMessage", "Please fill all the fields in order to register a new user.");
         }
 
         //resp.sendRedirect("user.jsp");
