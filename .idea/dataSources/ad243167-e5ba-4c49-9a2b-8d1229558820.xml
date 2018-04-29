@@ -1038,83 +1038,67 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="234" name="user_id_fk">
+    <column id="256" parent="234" name="recipe_name">
       <Position>2</Position>
-      <DataType>int(11)|0</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="257" parent="234" name="recipe_name">
-      <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="258" parent="234" name="recipe_recipe_name_uindex">
+    <index id="257" parent="234" name="recipe_recipe_name_uindex">
       <ColNames>recipe_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="259" parent="234" name="user_id_fk">
-      <ColNames>user_id_fk</ColNames>
-    </index>
-    <key id="260" parent="234" name="PRIMARY">
+    <key id="258" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="261" parent="234" name="recipe_recipe_name_uindex">
+    <key id="259" parent="234" name="recipe_recipe_name_uindex">
       <ColNames>recipe_name</ColNames>
       <UnderlyingIndexName>recipe_recipe_name_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="262" parent="234" name="user_id_fk">
-      <ColNames>user_id_fk</ColNames>
-      <RefSchemaName>mydatabase</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>id</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <column id="263" parent="235" name="id">
+    <column id="260" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="235" name="role_name">
+    <column id="261" parent="235" name="role_name">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="235" name="user_name">
+    <column id="262" parent="235" name="user_name">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="235" name="user_id">
+    <column id="263" parent="235" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="267" parent="235" name="role_id_uindex">
+    <index id="264" parent="235" name="role_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="268" parent="235" name="userid_fk">
+    <index id="265" parent="235" name="userid_fk">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="269" parent="235" name="PRIMARY">
+    <key id="266" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="270" parent="235" name="role_id_uindex">
+    <key id="267" parent="235" name="role_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>role_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="271" parent="235" name="userid_fk">
+    <foreign-key id="268" parent="235" name="userid_fk">
       <ColNames>user_id</ColNames>
       <RefSchemaName>mydatabase</RefSchemaName>
       <RefTableName>user</RefTableName>
@@ -1122,43 +1106,43 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="272" parent="236" name="id">
+    <column id="269" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="236" name="first_name">
+    <column id="270" parent="236" name="first_name">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="236" name="last_name">
+    <column id="271" parent="236" name="last_name">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="236" name="user_name">
+    <column id="272" parent="236" name="user_name">
       <Position>4</Position>
       <DataType>varchar(15)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="236" name="password">
+    <column id="273" parent="236" name="password">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="277" parent="236" name="users_user_name_uindex">
+    <index id="274" parent="236" name="users_user_name_uindex">
       <ColNames>user_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="278" parent="236" name="PRIMARY">
+    <key id="275" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="279" parent="236" name="users_user_name_uindex">
+    <key id="276" parent="236" name="users_user_name_uindex">
       <ColNames>user_name</ColNames>
       <UnderlyingIndexName>users_user_name_uindex</UnderlyingIndexName>
     </key>

@@ -31,7 +31,7 @@ public class User {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @JsonIgnore
@@ -42,8 +42,8 @@ public class User {
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Role> userRoles = new ArrayList<>();
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Recipe> recipes = new HashSet<>();
+   // @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+  //  private Set<Recipe> recipes = new HashSet<>();
 
 
     /**
@@ -177,30 +177,24 @@ public class User {
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
-     * @param foodSet   the food set
-     * @param userRoles the user roles
-     * @param recipes   the recipes
      */
-    public User(String password, String firstName, String lastName, String userName, Set<Food> foodSet, List<Role> userRoles, Set<Recipe> recipes) {
+    public User(String password, String firstName, String lastName, String userName) {
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
-        this.foodSet = foodSet;
-        this.recipes = recipes;
+        //this.foodSet = foodSet;
+        //this.recipes = recipes;
     }
 
 
     @Override
     public String toString() {
         return "User{" +
-                "password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", userName='" + userName + '\'' +
                 ", id=" + id +
-                ", foodSet=" + foodSet +
-                ", recipes=" + recipes +
                 '}';
     }
 
@@ -248,18 +242,18 @@ public class User {
      *
      * @return the recipes
      */
-    public Set<Recipe> getRecipes() {
-        return recipes;
-    }
+   // public Set<Recipe> getRecipes() {
+    //    return recipes;
+   // }
 
     /**
      * Sets recipes.
      *
      * @param recipes the recipes
      */
-    public void setRecipes(Set<Recipe> recipes) {
-        this.recipes = recipes;
-    }
+  //  public void setRecipes(Set<Recipe> recipes) {
+    //    this.recipes = recipes;
+  //  }
 
     /**
      * Gets password.

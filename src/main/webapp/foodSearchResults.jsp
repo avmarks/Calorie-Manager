@@ -60,7 +60,6 @@
             $("#userTable").dataTable({
                 "sPaginationType": "full_numbers",
                 "bJQueryUI": true
-
             });
             $("#calculating").hide();
         }

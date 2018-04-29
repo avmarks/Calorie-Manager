@@ -4,6 +4,8 @@ import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDAO;
 import org.apache.logging.log4j.LogManager;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,10 +22,11 @@ import java.io.IOException;
         urlPatterns = {"/addNewUser"}
 )
 public class AddNewUser extends HttpServlet {
+
     private final org.apache.logging.log4j.Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
 
@@ -33,29 +36,29 @@ public class AddNewUser extends HttpServlet {
         String lastName = req.getParameter("lastName");
         String password = req.getParameter("password");
         String userName = req.getParameter("userName");
+        //String userRole = req.getParameter("userRole");
 
 
-
-        /*User newUser = new User(firstName, lastName, userName, password );
-        Role role = new Role(newUser, newUser.getUserName(), "registered_user");
+        User newUser = new User(firstName, lastName, userName, password );
+        Role role = new Role(newUser, "registered-user", newUser.getUserName());
 
         if(!firstName.isEmpty() && !lastName.isEmpty() && !userName.isEmpty() && !password.isEmpty()) {
             newUser.addRole(role);
             genericDAO.insert(newUser);
-            session.setAttribute("MyMessage", "New User has been added to the database of users");
+            session.setAttribute("Message", "New User has been added to the database of users");
         } else {
-            session.setAttribute("MyMessage", "Please fill all the fields in order to register a new user.");
+            session.setAttribute("Message", "Please fill all the fields in order to register a new user.");
         }
 
-        resp.sendRedirect("user.jsp");
+        //resp.sendRedirect("user.jsp");
 
-        //genericDAO.saveOrUpdate(newUser);
+       // genericDAO.saveOrUpdate(newUser);
 
-        //logger.info("user with these credentials has been added " + newUser);
+       // logger.info("user with these credentials has been added " + newUser);
 
-       // RequestDispatcher dispatcher = req.getRequestDispatcher("user.jsp");
-       // dispatcher.forward(req, resp);
-*/
+      // RequestDispatcher dispatcher = req.getRequestDispatcher("user.jsp");
+      // dispatcher.forward(req, resp);
+        resp.sendRedirect("admin");
 
     }
 }
