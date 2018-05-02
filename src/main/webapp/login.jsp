@@ -23,6 +23,7 @@
                    <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">
                    <INPUT TYPE="SUBMIT" VALUE="Log In" class="login loginmodal-submit">
             </FORM>
+            <h3><a href="user.jsp">Register</a></h3>
         </div>
     </div>
 

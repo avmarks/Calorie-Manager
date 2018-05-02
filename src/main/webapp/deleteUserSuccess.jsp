@@ -12,5 +12,6 @@
 </head>
 <body>
 <h3>${deleteMessage}</h3>
+<h3>${updateMessage}</h3>
 </body>
 </html>

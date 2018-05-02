@@ -46,6 +46,7 @@ public class AddNewUser extends HttpServlet {
             newUser.addRole(role);
             genericDAO.insert(newUser);
             session.setAttribute("addMessage", "New user " + userName + " has been added to the database of users");
+            session.setAttribute("loginMessage", "<a href='login.jsp'>Back to Login Page</a>");
         } else {
             session.setAttribute("addMessage", "Please fill all the fields in order to register a new user.");
         }
@@ -58,7 +59,7 @@ public class AddNewUser extends HttpServlet {
 
       // RequestDispatcher dispatcher = req.getRequestDispatcher("user.jsp");
       // dispatcher.forward(req, resp);
-        resp.sendRedirect("admin");
+        resp.sendRedirect("user.jsp");
 
     }
 }

@@ -80,8 +80,6 @@ public class GenericDAO<T> {
      */
     public List<T> getUserID(String value) {
 
-
-
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
@@ -172,7 +170,7 @@ public class GenericDAO<T> {
 
 
 
-    public List<User> getByWhereAndLike(String propertyName, String value, int userId, String idValue) {
+  /*  public List<User> getByWhereAndLike(String propertyName, String value, int userId, String idValue) {
 
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -188,6 +186,6 @@ public class GenericDAO<T> {
         List<User> users = session.createQuery( query ).getResultList();
 
         return users;
-    }
+    }*/
 
 }

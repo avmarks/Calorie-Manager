@@ -9,8 +9,8 @@
 <html>
 <%@include file="head.jsp"%>
 <body>
-<h2>${Message}</h2>
 <div class="container">
+    <h2>${addMessage}</h2><br/>
 <form action="addNewUser" method="post" class="form-horizontal">
     <div class="form-group">
         <label for="firstName" class="control-label col-sm-2">First Name: </label>
@@ -40,6 +40,7 @@
      <input type="submit" class="btn btn-info" name="submit"/>
     </div>
 </form>
+    <h2>${loginMessage}</h2>
 </div>
 </body>
 </html>

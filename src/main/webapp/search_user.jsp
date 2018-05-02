@@ -4,6 +4,7 @@
 
 <body>
 <%@include file="navbar.jsp"%>
+<%@ page session="false" %>
 
     <div class="container">
         <h2>Search users:</h2>

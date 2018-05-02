@@ -1,4 +1,9 @@
-delete from test_mydatabase.user;
+SET foreign_key_checks = 0;
+DELETE from test_mydatabase.ingredient;
 DELETE from test_mydatabase.food;
-INSERT INTO user VALUES (1,'Alex','Marks','alexmarks','tasty'),(2,'Mike','Marks','mikemarks','orange'),(3,'Emily','Marks','emilymarks','chocolate'), (4,'Fred','Flintstone','helloFred','chocolate');
-INSERT INTO food VALUES (1,'strawberry',33,1),(2,'Jalopeno',29,1);
+DELETE from test_mydatabase.recipe;
+DELETE from test_mydatabase.role;
+DELETE from test_mydatabase.user;
+SET FOREIGN_KEY_CHECKS =1;
+
+

@@ -29,19 +29,21 @@
         </thead>
         <tbody>
 <c:forEach var="user" items="${users}">
-    <tr>
-        <td>${user.id}</td>
-        <td><input type="text" value="${user.firstName}"></td>
-        <td><input type="text" value="${user.lastName}"></td>
-        <td><input type="text" value="${user.userName}"></td>
+    <tr><form action="updateUser" method="post">
+        <td>${user.id}<input type="hidden" value="${user.id}" id="userID" name="userID"></td>
+        <td><input type="text" value="${user.firstName}" id="thisFName" name="thisFName"></td>
+        <td><input type="text" value="${user.lastName}" id="thisLName" name="thisLName"></td>
+        <td><input type="text" value="${user.userName}" id="thisUName" name="thisUName"></td>
 
-        <td><c:forEach var="role" items="${user.userRoles}"><input type="text" value="${role.roleName}"></c:forEach></td>
+        <td><c:forEach var="role" items="${user.userRoles}"><input type="text" value="${role.roleName}" name="thisURole"></c:forEach></td>
         <td >
             <a href="deleteUser?userID=${user.id}" value="userID" class="btn btn-danger" role="button">Delete</a>
         </td>
         <td>
-            <a href="updateUser?userID=${user.id}" value="userID" class="btn btn-warning" role="button">Update</a>
+            <!--<a href="updateUser?userID=${user.id}&thisFName=#thisFName&thisLName=#thisLName&thisUName=#thisUName" class="btn btn-warning" role="button">Update</a>-->
+            <input type="submit"  class="btn btn-warning"  value="update">
         </td>
+    </form>
     </tr>
     </tbody>
 </c:forEach>

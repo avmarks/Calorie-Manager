@@ -19,6 +19,7 @@ import java.util.Set;
  * A simple servlet search for a food item of choice
  */
 @WebServlet(
+        name = "searchFood",
         urlPatterns = {"/searchFood"}
 )
 public class SearchFood extends HttpServlet {

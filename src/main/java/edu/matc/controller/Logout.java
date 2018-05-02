@@ -16,11 +16,20 @@ import java.io.IOException;
 public class Logout extends HttpServlet{
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
 
+        HttpSession session = request.getSession();
+
+        String currentUser = (String)session.getAttribute("currentUser");
+
+        session.removeAttribute(currentUser);
         session.invalidate();
+        request.logout();
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("logout.jsp");
+       // RequestDispatcher dispatcher = request.getRequestDispatcher("logout.jsp");
+       // dispatcher.forward(request, response);
+
+        RequestDispatcher  dispatcher =
+                getServletContext().getRequestDispatcher("/logout.jsp");
         dispatcher.forward(request, response);
     }
 }

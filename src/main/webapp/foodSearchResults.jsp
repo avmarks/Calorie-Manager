@@ -24,8 +24,6 @@
         </tbody>
     </table>
 
-
-
     <table id="userTable">
 
         <thead>
@@ -49,8 +47,6 @@
 </html>
 
 <script type="text/javascript">
-
-
     $('#userTable').each(function () {
         if ( $(this).find('td').length < 1 || $(this).find('td').is(':empty') ) {
             $(this).hide();
@@ -64,9 +60,8 @@
             $("#calculating").hide();
         }
         });
-
-
 </script>
+
 <style>
     body,h1 {font-family: "Raleway", sans-serif}
     body, html {height: 100%}

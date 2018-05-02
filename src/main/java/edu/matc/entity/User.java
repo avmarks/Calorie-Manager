@@ -173,12 +173,29 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param password  the password
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
      */
-    public User(String password, String firstName, String lastName, String userName) {
+    public User( int id, String firstName, String lastName, String userName, String password ) {
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.id = id;
+        //this.foodSet = foodSet;
+        //this.recipes = recipes;
+    }
+
+
+    /**
+     * Instantiates a new User.
+     * @param password the password
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+*/
+    public User( String password, String firstName, String lastName, String userName) {
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -186,7 +203,6 @@ public class User {
         //this.foodSet = foodSet;
         //this.recipes = recipes;
     }
-
 
     @Override
     public String toString() {
