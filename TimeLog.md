@@ -34,4 +34,6 @@
 | 4/26/18 | Created and annotated ingredient and recipe entities, populated the fields, updated the design | 12|
 | 4/26/18 | deployed changes to aws, struggled with logging into aws. Magically, it got resolved..| 5|
 | 4/3/18 | Added admin functionality for add/delete user + jquery| 8|
+| 5/1/18 | Fixed the logout error and update functionality on admin| 1|
+| 5/2/18 | Modified tests and test data| 3|
    

@@ -20,14 +20,14 @@ which would save time and energy, in addition to making it a perfect app for a k
   * MySQL
   * Store foods, recipes and calories
 * ORM Framework
-  * Hibernate ??
+  * Hibernate
 * Dependency Management
   * Maven
 * CSS 
   * Bootstrap and jQuery
 * Data Validation
-  * Bootstrap Validator for front 
-* Loggingend
+  * Bootstrap Validator for front end
+* Logging
   * Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting. 
 * Unit Testing
   * JUnit
