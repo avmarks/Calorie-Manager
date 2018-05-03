@@ -45,6 +45,26 @@ public class User {
    // @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
   //  private Set<Recipe> recipes = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Calorie> calories = new HashSet<>();
+
+    /**
+     * Gets calories.
+     *
+     * @return the calories
+     */
+    public Set<Calorie> getCalories() {
+        return calories;
+    }
+
+    /**
+     * Sets calories.
+     *
+     * @param calories the calories
+     */
+    public void setCalories(Set<Calorie> calories) {
+        this.calories = calories;
+    }
 
     /**
      * Gets first name.
@@ -152,6 +172,16 @@ public class User {
     }
 
 
+    /**
+     * Add calorie
+     *
+     * @param calorie the food
+     */
+    public void addCalorie(Calorie calorie) {
+        calories.add(calorie);
+        calorie.setUser(this);
+    }
+
 
     /**
      * Instantiates a new User.
@@ -173,9 +203,11 @@ public class User {
     /**
      * Instantiates a new User.
      *
+     * @param id        the id
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
+     * @param password  the password
      */
     public User( int id, String firstName, String lastName, String userName, String password ) {
         this.password = password;
@@ -190,11 +222,12 @@ public class User {
 
     /**
      * Instantiates a new User.
-     * @param password the password
+     *
+     * @param password  the password
      * @param firstName the first name
      * @param lastName  the last name
      * @param userName  the user name
-*/
+     */
     public User( String password, String firstName, String lastName, String userName) {
         this.password = password;
         this.firstName = firstName;

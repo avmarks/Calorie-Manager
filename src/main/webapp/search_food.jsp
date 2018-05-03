@@ -13,7 +13,10 @@
     </div>
         <button type="submit" name="submit" value="search" class="btn btn-success">Search</button>
         <button type="submit" name="submit" value="searchAll" class="btn btn-success">Display All</button>
-    </form>
+    </form><br/>
+
+    <h2>Add Food to personal database:</h2>
+    <%@include file="add_food.jsp" %>
 </div>
 </body>
 </html>

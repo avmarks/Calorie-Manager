@@ -6,7 +6,8 @@
 <body class="bgimg">
 <%@include file="navbar.jsp"%>
 <div class="container-fluid">
-    <h2>Search Results: </h2>
+    <h2>Search Results: </h2><br/>
+    <div class="container">
     <table id="calculating" class="display" cellspacing="0" width="100%">
         <thead>
         <tr>
@@ -22,8 +23,8 @@
                 <td><input id="calculate" placeholder=" quick calculation"></td>
             </tr>
         </tbody>
-    </table>
-
+    </table></div>
+<div class="container">
     <table id="userTable">
 
         <thead>
@@ -42,6 +43,7 @@
         </tbody>
         </c:forEach>
     </table>
+</div>
 </div>
 </body>
 </html>

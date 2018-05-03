@@ -1,4 +1,5 @@
 SET foreign_key_checks = 0;
+DELETE from test_mydatabase.calories;
 DELETE from test_mydatabase.ingredient;
 DELETE from test_mydatabase.food;
 DELETE from test_mydatabase.recipe;
