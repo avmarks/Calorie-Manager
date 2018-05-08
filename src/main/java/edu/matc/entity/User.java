@@ -45,26 +45,9 @@ public class User {
    // @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
   //  private Set<Recipe> recipes = new HashSet<>();
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Calorie> calories = new HashSet<>();
 
-    /**
-     * Gets calories.
-     *
-     * @return the calories
-     */
-    public Set<Calorie> getCalories() {
-        return calories;
-    }
 
-    /**
-     * Sets calories.
-     *
-     * @param calories the calories
-     */
-    public void setCalories(Set<Calorie> calories) {
-        this.calories = calories;
-    }
+
 
     /**
      * Gets first name.
@@ -172,15 +155,7 @@ public class User {
     }
 
 
-    /**
-     * Add calorie
-     *
-     * @param calorie the food
-     */
-    public void addCalorie(Calorie calorie) {
-        calories.add(calorie);
-        calorie.setUser(this);
-    }
+
 
 
     /**

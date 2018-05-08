@@ -34,7 +34,7 @@ public class DeleteUser extends HttpServlet{
 
         session.setAttribute("deleteMessage", "User " + user.getUserName() + " was deleted");
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/deleteUserSuccess.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("administrator");
         dispatcher.forward(request, response);
     }
 }

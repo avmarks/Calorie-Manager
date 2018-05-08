@@ -18,5 +18,5 @@
 <script>
     var timer = setTimeout(function() {
         window.location='login.jsp'
-    }, 2000);
+    }, 1800);
 </script>

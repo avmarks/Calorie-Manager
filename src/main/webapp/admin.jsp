@@ -8,15 +8,18 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript" charset="utf-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript" charset="utf-8">
 </script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body class="bgimg">
 <%@include file="navbar.jsp"%>
 <div class="container">
-<h2>${deleteMessage}</h2><h2>${addMessage}</h2>
-
+<h4>${deleteMessage}</h4>
+    <h4>${addMessage}</h4>
+    <h4>${updateMessage}</h4>
+<br/><br/>
     <table class="display" cellspacing="0" width="100%" id="dataTable">
         <thead>
             <th>User ID</th>

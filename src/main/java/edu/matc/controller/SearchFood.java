@@ -2,6 +2,7 @@ package edu.matc.controller;
 import edu.matc.entity.Food;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDAO;
+import edu.matc.nutritionixapi.APIService;
 import org.apache.logging.log4j.LogManager;
 
 import javax.servlet.RequestDispatcher;
@@ -29,6 +30,8 @@ public class SearchFood extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        APIService apiService = new APIService();
+
 
         GenericDAO userDao = new GenericDAO(User.class);
 
@@ -36,12 +39,14 @@ public class SearchFood extends HttpServlet {
 
         User user = (User) listOfUsers.get(0);
 
+
+
         Set<Food> list = user.getFoodSet();
 
         if (req.getParameter("submit").equals("search")) {
 
             for (Food food: list) {
-                if(food.foodName.contains(req.getParameter("searchTerm"))) {
+                if(food.foodName.equals(req.getParameter("searchTerm"))) {
 
                     req.setAttribute("foodName", food.getFoodName());
                     req.setAttribute("foodCalorie", food.getFoodCalories());

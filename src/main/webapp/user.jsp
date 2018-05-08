@@ -40,7 +40,8 @@
      <input type="submit" class="btn btn-info" name="submit"/>
     </div>
 </form>
-    <h2>${loginMessage}</h2>
+    <h5>${loginMessage}</h5>
+    <h5>${adminPage}</h5>
 </div>
 </body>
 </html>

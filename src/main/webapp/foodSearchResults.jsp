@@ -2,32 +2,33 @@
 <jsp:include page="taglib.jsp" />
 <html>
 <jsp:include page="head.jsp" />
-<c:set var="title" value="Search Results" />
 <body class="bgimg">
 <%@include file="navbar.jsp"%>
 <div class="container-fluid">
-    <h2>Search Results: </h2><br/>
+
     <div class="container">
-    <table id="calculating" class="display" cellspacing="0" width="100%">
-        <thead>
+        <h2>Search Results: </h2><br/>
+    <table id="calculating" class="table table-bordered" cellspacing="0" width="100%">
+        <thead >
         <tr>
             <th>Food Name</th>
             <th>Calories</th>
             <th>Weight</th>
+            <th>Result</th>
         </tr>
         </thead>
         <tbody >
             <tr>
                 <td>${foodName}</td>
-                <td>${foodCalorie}</td>
-                <td><input id="calculate" placeholder=" quick calculation"></td>
+                <td ><input id="foodCalorie" type="number" value="${foodCalorie}"/></td>
+                <td><input id="calculate" placeholder=" quick calculation" type="number"><button id="calculateCalories">Get Calories</button> </td>
+                <td id="result"></td>
             </tr>
         </tbody>
     </table></div>
 <div class="container">
-    <table id="userTable">
-
-        <thead>
+    <table id="userTable" class="table">
+        <thead class="thead-dark">
             <tr>
                 <th id="foodNameId">Food Name</th>
                 <th id="foodCalorieId">Calories</th>
@@ -62,6 +63,20 @@
             $("#calculating").hide();
         }
         });
+    $("#calculateCalories").on("click", function() {
+        var calories = $("#foodCalorie").val();
+
+        var sgrams = $("#calculate").val();
+
+
+
+        var calculatedCalories = Math.round((sgrams/100) * calories);
+
+        $("#result").html(calculatedCalories + " calories for " + sgrams + " grams" );
+
+
+    });
+
 </script>
 
 <style>

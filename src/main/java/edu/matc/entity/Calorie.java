@@ -1,5 +1,6 @@
 package edu.matc.entity;
 
+
 import org.hibernate.boot.jaxb.hbm.spi.JaxbHbmTimestampAttributeType;
 import util.LocalDateAttributeConverter;
 

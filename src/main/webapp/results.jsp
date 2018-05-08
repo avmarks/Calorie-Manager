@@ -1,3 +1,4 @@
+<%--NOT Part of the project  needs to be in legacy here, just in case
 <%@include file="taglib.jsp"%>
 <html>
 <%@include file="head.jsp"%>
@@ -33,4 +34,4 @@
     $(document).ready( function () {
         $('#userTable').DataTable();
     } );
-</script>
+</script>--%>

@@ -8,7 +8,7 @@
 
     <div class="container">
         <h2>Post Calories</h2>
-        <form action="/addCalories" class="form-inline">
+        <form action="#" class="form-inline">
             <div class="form-group">
                 <input type="text" class="form-control" id="postCalories" name="postCalories" aria-describedby="postCaloriesHelp" placeholder="Enter calorie value">
             </div>
@@ -18,6 +18,9 @@
         <br/>
         <br/>
         <div><button class="btn btn-warning" >Get Calories for last 30 days</button></div>
+        <br/><br/>
+        <img src="images/caloriesDashboard.PNG" alt="calories diagram">
+
     </div>
 </body>
 </html>

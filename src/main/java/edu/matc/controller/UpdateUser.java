@@ -55,7 +55,7 @@ public class UpdateUser extends HttpServlet{
 
         // logger.info("user with these credentials has been added " + newUser);
 
-         RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUserSuccess.jsp");
+         RequestDispatcher dispatcher = req.getRequestDispatcher("updateUserSuccess.jsp");
          dispatcher.forward(req, resp);
 
 

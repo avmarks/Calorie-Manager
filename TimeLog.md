@@ -36,4 +36,5 @@
 | 4/3/18 | Added admin functionality for add/delete user + jquery| 8|
 | 5/1/18 | Fixed the logout error and update functionality on admin| 1|
 | 5/2/18 | Modified tests and test data| 3|
+| 5/6/18 | Successfully tested API call| 6|
    
