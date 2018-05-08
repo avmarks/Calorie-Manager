@@ -2,7 +2,7 @@ package edu.matc.nutritionixapi;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.hut.ResponseItem;
+
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;

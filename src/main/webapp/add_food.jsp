@@ -3,7 +3,6 @@
 <%@include file="head.jsp"%>
 <c:set var="title" value="Add Food" />
 <body>
-
 <div>
 <h2>${Message}</h2>
     <form action="addFood" method="post" class="form-inline">

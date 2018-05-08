@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * This servlet is responsible for deleting the user from admin page
+ */
 @WebServlet(
         name = "deleteUser",
         urlPatterns = {"/deleteUser"}

@@ -12,6 +12,9 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This servlet is responsible for displaying the admin page
+ */
 @WebServlet(
         name = "administrator",
         urlPatterns = {"/administrator"}

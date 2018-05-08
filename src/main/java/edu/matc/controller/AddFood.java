@@ -54,14 +54,14 @@ public class AddFood extends HttpServlet {
         if(!foodName.isEmpty()&&(foodCalorie != 0)) {
 
             foodDao.insert(newFood);
-            session.setAttribute("Message", "Food item was added to the database " + confirmationMessage);
+            session.setAttribute("Message", " " + confirmationMessage);
 
         } else {
 
             session.setAttribute("Message", "Both fields are required.");
         }
 
-        resp.sendRedirect("add_food.jsp");
+        resp.sendRedirect("add_food_success.jsp");
 
     }
 }

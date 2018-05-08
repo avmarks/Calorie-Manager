@@ -1,9 +1,6 @@
 package edu.matc.nutritionixapi;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.hut.ResponseItem;
-import edu.matc.nutritionixapi.Foods;
-import edu.matc.nutritionixapi.FoodsItem;
 import org.junit.jupiter.api.Test;
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.*;

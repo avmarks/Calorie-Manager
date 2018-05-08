@@ -6,3 +6,11 @@
            userRoleTable="role" roleNameCol="role_name" >
     </Realm>
 </Context>
+
+
+*************************************
+
+Don't forget to change the password in hibernate.cfg.xml
+
+
+**************************************

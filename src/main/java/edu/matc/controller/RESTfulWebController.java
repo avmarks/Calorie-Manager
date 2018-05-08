@@ -20,6 +20,9 @@ import javax.xml.bind.Marshaller;
 import java.io.StringWriter;
 import java.util.List;
 
+/**
+ * This service was part of the practice of making a restful service
+ */
 @Path("/Users")
 public class RESTfulWebController {
 
