@@ -3,10 +3,13 @@
     <a href="index.jsp" class="navbar-brand pull-left">Calorie Pal</a>
 </div>
         <ul>
+
             <li><a href="logout" class="active" >Logout</a></li>
+            <li><a href="administrator">Admin</a></li>
             <li><a href="search_user.jsp">Calories DashBoard</a></li>
             <li><a href="add_recipe.jsp">Recipes</a></li>
             <li><a href="search_food.jsp">Food</a></li>
+
         </ul>
 
 

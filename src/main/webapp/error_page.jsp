@@ -34,6 +34,7 @@
     <p>The data that you are looking for may not be in database, try another search.</p>
     <p>User with the same username may already exist in database, try another name.</p>
     <p>Any guesses?</p>
+        <p>admin@admin.com</p>
     <p>Please don't hesitate to contact me if the problem persists admin@admin.com</p>
     </div>
     <br/>

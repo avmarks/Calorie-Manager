@@ -14,6 +14,7 @@ import javax.ws.rs.core.*;
 */
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
 public class TestAPI {
     @Test
     public void testAzureApiJSON() throws Exception {
@@ -49,4 +50,5 @@ public class TestAPI {
     }
 
 
-}
+
+}*/
