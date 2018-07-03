@@ -19,10 +19,10 @@ public class GraphHelper {
     @Produces("application/json")
     public Response getJsonCalories() throws JsonProcessingException {
 
-       Calorie calorie = new Calorie();
+
 
        GenericDAO calorieDao = new GenericDAO(Calorie.class);
-       List<Calorie> calories = calorieDao.getByPropertyEqual(calorie.getDate(), calorie.getCalorie_value());
+       List<Calorie> calories = calorieDao.getAll();
        ObjectMapper objectMapper = new ObjectMapper();
        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
        String arrayToJson = objectMapper.writeValueAsString(calories);
