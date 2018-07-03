@@ -101,7 +101,6 @@ class UserDAOTest {
 
     }
 
-
     /**
      * Update success.
      */

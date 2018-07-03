@@ -2,16 +2,12 @@ package edu.matc.nutritionixapi;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
-import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.HashMap;
-import java.util.List;
+
 
 /**
  * This class connects to the API service to retrieve the desired food data
@@ -39,8 +35,6 @@ public FoodsItem getFoodValues(String queryParameter) throws Exception {
     ObjectMapper mapper = new ObjectMapper();
     Foods response1 = mapper.readValue(jsonStr.readEntity(String.class), Foods.class);
     FoodsItem foodsItem = response1.getFoods().get(0);
-
-
 
     return foodsItem;
 
