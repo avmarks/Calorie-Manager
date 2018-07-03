@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -46,6 +47,8 @@ class UserDAOTest {
     void getByIdSuccess() {
         User retrievedUser = (User)genericDAO.getById(1);
         assertEquals("Alex", retrievedUser.getFirstName());
+        assertEquals("Marks",retrievedUser.getLastName());
+        assertEquals("alexmarks", retrievedUser.getUserName());
     }
 
     /**
@@ -82,6 +85,20 @@ class UserDAOTest {
     void deleteSuccess() {
         genericDAO.delete(genericDAO.getById(17));
         assertNull(genericDAO.getById(17));
+    }
+
+
+    @Test
+    void deleteSuccessWithRole() {
+        User userToDelete = (User)genericDAO.getById(17);
+        GenericDAO roleDao = new GenericDAO(Role.class);
+        Role roleForDeletion = (Role)roleDao.getById(18);
+        userToDelete.removeRole(roleForDeletion);
+        genericDAO.delete(userToDelete);
+
+        assertNull(genericDAO.getById(17));
+        assertNull(roleDao.getById(18));
+
     }
 
 

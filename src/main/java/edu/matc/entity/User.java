@@ -39,7 +39,7 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Food> foodSet = new HashSet<>();
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Role> userRoles = new ArrayList<>();
 
    // @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
@@ -173,6 +173,12 @@ public class User {
     public void addRole(Role role) {
         userRoles.add(role);
 
+    }
+
+
+    public void removeRole(Role role){
+        userRoles.remove(role);
+        role.setUser(null);
     }
 
     /**
