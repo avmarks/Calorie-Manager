@@ -38,7 +38,7 @@ public class User {
     @XmlTransient
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Food> foodSet = new HashSet<>();
-
+    @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Role> userRoles = new ArrayList<>();
 

@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import javax.persistence.criteria.*;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -133,6 +135,22 @@ public class GenericDAO<T> {
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from( type );
         query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> users = session.createQuery( query ).getResultList();
+
+        session.close();
+        return users;
+    }
+
+
+    public List<T> getByPropertyEqual(LocalDate propertyName, Integer value) {
+        Session session = getSession();
+
+        logger.debug("Searching for user with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from( type );
+        query.select(root).where(builder.equal(root.get(String.valueOf(propertyName)), value));
         List<T> users = session.createQuery( query ).getResultList();
 
         session.close();

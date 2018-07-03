@@ -1,5 +1,7 @@
 package edu.matc.entity;
-import org.codehaus.jackson.annotate.JsonIgnore;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,7 +13,9 @@ import java.util.Objects;
 /**
  * The type Role.
  */
+
 @XmlAccessorType( XmlAccessType.FIELD)
+@JsonIgnoreProperties("role")
 @Entity(name = "Role")
 @Table(name = "role")
 public class Role {
