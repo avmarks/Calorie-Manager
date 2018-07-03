@@ -23,6 +23,7 @@
         <web-resource-collection>
             <web-resource-name>userdisplay</web-resource-name>
             <url-pattern>/search_user.jsp</url-pattern>
+            <url-pattern>/addCalories</url-pattern>
         </web-resource-collection>
 
         <!-- <web-resource-collection>
@@ -33,11 +34,13 @@
         <web-resource-collection>
             <web-resource-name>userdisplay</web-resource-name>
             <url-pattern>/search_food.jsp</url-pattern>
+            <url-pattern>/searchFood</url-pattern>
         </web-resource-collection>
 
         <web-resource-collection>
             <web-resource-name>userdisplay</web-resource-name>
             <url-pattern>/add_food.jsp</url-pattern>
+            <url-pattern>/addFood</url-pattern>
         </web-resource-collection>
 
         <web-resource-collection>
