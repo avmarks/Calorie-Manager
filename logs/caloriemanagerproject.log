@@ -1392,3 +1392,303 @@
 [ERROR] 2018-07-03 14:34:50.342 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2018-07-03 14:34:50.395 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2018-07-03 14:34:50.432 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:22.034 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:23.501 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:54:23.518 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 14:54:23.691 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:23.744 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:23.809 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:23.849 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:54:23.864 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 14:54:23.901 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:23.954 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:54:23.973 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 14:54:24.012 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.043 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.089 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.155 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.196 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.232 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.322 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:54:24.336 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 14:54:24.359 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:54:24.374 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 14:54:24.401 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.438 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.486 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:54:24.524 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:34.210 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:35.701 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:56:35.719 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 14:56:35.903 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:35.952 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.004 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.074 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:56:36.087 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 14:56:36.120 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.167 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:56:36.184 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 14:56:36.214 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.247 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.294 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.367 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.406 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.478 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.548 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:56:36.574 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 14:56:36.611 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 14:56:36.624 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 14:56:36.647 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.722 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 14:56:36.764 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:33.130 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:34.741 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:02:34.764 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:02:35.033 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.090 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.155 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.249 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:02:35.348 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:02:35.427 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.633 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:02:35.672 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:02:35.727 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.823 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:35.927 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.013 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.067 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.108 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.158 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:02:36.174 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:02:36.203 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:02:36.219 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:02:36.245 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.291 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.352 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:02:36.398 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:37.110 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:38.803 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:03:38.820 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:03:39.047 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.101 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.162 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.207 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:03:39.228 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:03:39.279 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.355 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:03:39.375 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:03:39.414 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.452 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.515 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.618 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.662 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.702 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.750 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:03:39.767 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:03:39.793 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:03:39.811 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:03:39.834 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.875 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.932 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:03:39.978 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:09.274 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:10.996 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:06:11.022 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:06:11.208 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.258 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.314 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.362 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:06:11.377 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:06:11.411 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.460 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:06:11.476 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:06:11.509 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.541 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.592 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.677 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.724 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.781 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.839 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:06:11.860 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:06:11.904 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:06:11.919 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:06:11.943 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:11.977 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:12.024 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:06:12.061 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:19.647 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.162 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:07:21.186 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:07:21.401 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.461 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.522 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.577 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:07:21.592 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:07:21.638 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.695 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:07:21.714 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:07:21.749 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.786 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.842 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.918 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.962 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:21.999 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:22.041 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:07:22.056 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:07:22.086 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:07:22.102 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:07:22.128 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:22.168 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:22.225 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:07:22.272 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:43.657 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.137 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:09:45.159 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:09:45.359 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.407 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.464 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.509 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:09:45.523 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:09:45.557 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.606 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:09:45.623 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:09:45.657 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.690 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.748 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.818 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.859 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.890 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:45.925 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:09:45.938 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:09:45.962 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:09:45.976 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:09:45.997 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:46.034 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:46.082 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:09:46.175 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:41.452 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.000 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:11:43.017 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:11:43.203 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.251 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.305 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.349 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:11:43.363 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:11:43.401 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.451 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:11:43.468 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:11:43.503 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.534 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.578 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.633 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.671 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.705 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.740 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:11:43.753 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:11:43.775 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:11:43.805 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:11:43.825 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.861 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.910 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:11:43.951 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:17.088 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:18.618 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:14:18.639 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-03 15:14:18.826 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:18.876 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:18.929 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:18.973 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:14:18.987 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-03 15:14:19.021 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.072 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:14:19.088 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-03 15:14:19.121 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.152 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.198 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.254 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.297 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.332 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.368 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:14:19.381 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:14:19.404 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-03 15:14:19.416 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-03 15:14:19.437 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.475 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.526 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-03 15:14:19.563 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:04.433 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:06.732 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:21:06.764 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-09 10:21:07.023 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.086 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.148 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.211 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:21:07.226 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-09 10:21:07.273 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.336 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:21:07.351 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-09 10:21:07.383 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.429 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.492 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.570 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.617 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.648 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.716 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:21:07.717 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 10:21:07.748 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:21:07.764 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 10:21:07.795 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.826 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.931 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:21:07.978 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:29.827 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.418 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:53:31.433 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-09 10:53:31.636 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.694 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.731 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.778 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:53:31.794 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-09 10:53:31.825 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.886 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:53:31.902 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-09 10:53:31.933 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:31.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.011 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.074 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.105 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.136 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.183 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:53:32.215 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 10:53:32.261 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 10:53:32.277 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 10:53:32.293 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.355 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.402 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 10:53:32.433 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:46.255 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:47.656 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 12:17:47.673 [main] GenericDAO - Searching for user with id = 1
+[ERROR] 2018-07-09 12:17:47.839 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:47.891 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:47.950 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:47.995 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 12:17:48.011 [main] GenericDAO - Searching for user with foodName = strawberry
+[ERROR] 2018-07-09 12:17:48.046 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.100 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 12:17:48.116 [main] GenericDAO - Searching for user with foodName = b
+[ERROR] 2018-07-09 12:17:48.152 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.187 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.234 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.290 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.333 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.370 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.406 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 12:17:48.419 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 12:17:48.443 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-07-09 12:17:48.457 [main] GenericDAO - Searching for user with firstName = Alex
+[ERROR] 2018-07-09 12:17:48.479 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.517 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.570 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-07-09 12:17:48.609 [main] Database - java.sql.SQLException: Can not issue empty query.
